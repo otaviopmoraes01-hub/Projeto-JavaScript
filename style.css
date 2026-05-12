@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background: white;
+  width: 420px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #667;
+  font-size: 14px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.form button {
+  padding: 12px 15px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover {
+  background: #2f8dfc;
+}
+
+/* LISTA */
+.lista {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ITEM */
+.lista li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.lista li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+/* TEXTO */
+.lista li span {
+  cursor: pointer;
+}
+
+/* BOTÃO REMOVER */
+.lista li button {
+  background: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lista li button:hover {
+  background: #e04848;
+}
+
+/* CONCLUÍDA */
+.concluida {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.7;
+}
