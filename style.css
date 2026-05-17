@@ -36,7 +36,6 @@ header p {
   font-size: 14px;
 }
 
-/* FORM */
 .form {
   display: flex;
   gap: 10px;
@@ -71,7 +70,6 @@ header p {
   background: #2f8dfc;
 }
 
-/* LISTA */
 .lista {
   list-style: none;
   max-height: 300px;
@@ -101,8 +99,6 @@ header p {
 .lista li span {
   cursor: pointer;
 }
-
-/* BOTÃO REMOVER */
 .lista li button {
   background: #ff5c5c;
   border: none;
@@ -115,8 +111,6 @@ header p {
 .lista li button:hover {
   background: #e04848;
 }
-
-/* CONCLUÍDA */
 .concluida {
   text-decoration: line-through;
   color: #999;
